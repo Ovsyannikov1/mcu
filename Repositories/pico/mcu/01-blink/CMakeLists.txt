@@ -15,6 +15,7 @@ add_executable(01_blink
 
 target_link_libraries(01_blink
     pico_stdlib
+    pico_stdio_usb
 )
 
 pico_set_linker_script(01_blink ${CMAKE_CURRENT_SOURCE_DIR}/memmap_rp2040.ld)
